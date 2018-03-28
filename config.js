@@ -49,7 +49,7 @@ exports.config = {
    onPrepare: function(){
        browser.manage().window().maximize();
        browser.manage().timeouts().implicitlyWait(5000);
-   }
+   },
 
 
        jasmineNodeOpts:{

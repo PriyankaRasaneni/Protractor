@@ -11,6 +11,7 @@ var lastName = element(by.id('last-name'));
 var password = element(by.id('password-input'));
 var confirmPassword = element(by.id('confirm-password-input'));
 var nextButton = element(by.xpath('/html/body/app-root/app-create-account/div[2]/form/app-create-email/div/div/button'));
+var emailverificationmessage = element(by.xpath('/html/body/app-root/app-create-account/div[2]/app-create-confirmation/section/div/button'));
 
 beforeAll(function(){
     browser.ignoreSynchronization = true;
@@ -51,7 +52,11 @@ it('Creating_an-account',function(){
 })
 
 
+it('verify email',function(){
+    
 
+
+})
 
 
 
