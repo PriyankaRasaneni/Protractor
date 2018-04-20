@@ -22,7 +22,7 @@ Protractor tests are written using the syntax of your test framework, for exampl
 
 Config Files :
 ############
-The configuration file tells Protractor how to set up the Selenium Server, which tests to run, how to set up the browsers, and which test framework to use. The configuration file can also include one or more global settings.
+The configuration file tells Protractor how to set up the Selenium Server, which tests to run, how to set up the browsers, and which test framework to use. The configuration file can also include one or more global settings global settings.
 
 
 Notes: Clear Explanation about protractor is available in the below link
