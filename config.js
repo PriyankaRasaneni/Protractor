@@ -11,7 +11,7 @@ exports.config = {
    //         plugins: [{
    //    package: 'protractor-testability-plugin'
    //    }],
-//    specs: ['D:/Priyanka/ILB/Login-Createanaccount/Create_an_account.spec.js'],
+   //specs: ['D:/Priyanka/ILB/Login-Createanaccount/Create_an_account.spec.js'],
 //    specs: ['D:/Priyanka/ILB/Login-Createanaccount/Login.spec.js'],
     specs:['D:/Priyanka/ILB/GeneralDonations/GeneralDonation.spec.js'],
       
@@ -25,7 +25,13 @@ exports.config = {
     // //    projectdonations: '/Users/vishvaprasad/eclipse-workspace/ILB/projectdonations.js'
     // },
        //specs: ['ilbLogin.js'],
-    
+    params: {
+        login: {
+            loginemail: 'priyanka@olivetech.net',
+            loginpassword: '123456'
+        }
+
+    },
    
     // params: {
     //   login: {
@@ -46,9 +52,20 @@ exports.config = {
    //    browserName: 'chrome'
    //  }]
    
-   onPrepare: function(){
-       browser.manage().window().maximize();
-       browser.manage().timeouts().implicitlyWait(5000);
+
+       
+// Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
+framework: 'jasmine2' ,
+     onPrepare: function() {
+        browser.manage().window().maximize();
+        browser.manage().timeouts().implicitlyWait(5000);
+         var jasmineReporters = require('D:/Priyanka/ILB/Reports');
+         jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter(null, true, true)
+         );
+        
+
+
+
    },
 
 

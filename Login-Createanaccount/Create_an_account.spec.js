@@ -18,10 +18,24 @@ beforeAll(function(){
     browser.get(url);
     browser.waitForAngular(true);
     browser.driver.manage().window().maximize();
+    
+    
 
 })
 
 it('Creating_an-account',function(){
+
+//  displaying title of the page
+
+    var title = browser.getTitle();
+    title.then(function(text){
+      console.log("Title for the page is :", text);
+    })
+
+var Url = browser.getCurrentUrl().then(function(url){
+    console.log("Url for this page is :", Url);
+})
+
     
     menuButton.click();
     browser.driver.sleep(5000);
@@ -52,22 +66,20 @@ it('Creating_an-account',function(){
 })
 
 
-it('verify email',function(){
+// it('verify email',function(){
     
+// })
+
+
+
+
+
+
+
+
+
+
+
 
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-});

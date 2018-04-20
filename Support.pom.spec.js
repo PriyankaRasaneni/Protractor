@@ -1,0 +1,10 @@
+var support = function(){
+
+
+
+
+
+
+
+    
+}

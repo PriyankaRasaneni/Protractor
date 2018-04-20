@@ -10,7 +10,7 @@ var loginButton = element(by.xpath('/html/body/app-root/app-login/div[2]/div/div
 
 
 beforeAll(function(){
-    browser.ignoreSynchronization = true;
+    //browser.ignoreSynchronization = true;
     browser.get(url);
     browser.waitForAngular(true);
     browser.driver.manage().window().maximize();
